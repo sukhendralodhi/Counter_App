@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Counter App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+   <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+ <div class="flex justify-center items-center h-screen">
+        <div class="bg-green-200 max-w-md text-center sm:w-96 py-4 px-16 rounded">
+            <h1 class="text-3xl mb-4">Counter App</h1>
+            <span class="text-2xl font-bold">0</span>
+            <hr class="mt-2 h-px bg-gray-200 border-2 dark:bg-gray-700">
+            <div class="buttons mt-4 flex justify-center items-center flex-col gap-2 sm:flex-row">
+                <button id="sub" class="w-32 sm:w-full font-bold bg-red-400 px-4 py-2 hover:bg-red-500">Subtract</button>
+                <button id="res" class="w-32 sm:w-full font-bold bg-white px-4 py-2 hover:bg-gray-200">Reset</button>
+                <button id="add" class="w-32 sm:w-full font-bold bg-blue-400 px-4 py-2 hover:bg-blue-500">Add</button>
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
