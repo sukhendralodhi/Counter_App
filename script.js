@@ -23,11 +23,14 @@ buttons.addEventListener("click", (e) => {
 
 function setColor() {
   if (counter.innerText > 0) {
-    counter.classList.toggle("text-yellow-900");
-  } else if (counter.innerText < 0) {
-    counter.classList.toggle("text-red-900");
-  } else {
+    // counter.classList.toggle("text-yellow-900");
+    counter.style.color = 'orange';
+} else if (counter.innerText < 0) {
+    // counter.classList.toggle("text-red-900");
+    counter.style.color = 'red';
+} else {
     counter.classList.toggle("text-white");
+    counter.style.color = '#fff';
   }
 }
 
